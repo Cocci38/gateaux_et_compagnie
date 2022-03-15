@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.49.9"
+  },
+  "name": "gateaux_et_compagnie",
+  "description": "site vitrine d'une pâtisserie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/general.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cocci38/gateaux_et_compagnie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cocci38/gateaux_et_compagnie/issues"
+  },
+  "homepage": "https://github.com/Cocci38/gateaux_et_compagnie#readme"
+}
