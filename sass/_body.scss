@@ -34,6 +34,7 @@ h2 {
     font-size: 40px;
     color: $color-middle;
     text-align: center;
+    margin-top: 70px;
 }
 .produit-container {
     display: grid;
@@ -82,7 +83,7 @@ h2 {
     @include flex-center;
     gap: 70px;
     .logo{
-        width: 80px;
+        width: 50px;
         height: auto;
     }
 }

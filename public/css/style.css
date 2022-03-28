@@ -85,6 +85,7 @@ h2 {
   font-size: 40px;
   color: #9f496e;
   text-align: center;
+  margin-top: 70px;
 }
 
 .produit-container {
@@ -138,8 +139,19 @@ h2 {
   gap: 70px;
 }
 .suivre .logo {
-  width: 80px;
+  width: 50px;
   height: auto;
+}
+
+.adresse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  background-color: #2b262d;
+  color: #f2ebe5;
+  padding: 0 30px 20px 15px;
 }
 
 body {
