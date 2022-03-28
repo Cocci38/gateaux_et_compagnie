@@ -1,11 +1,156 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Montserrat:wght@100;400;500&family=Nunito&display=swap");
+.haut {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  justify-items: center;
+  text-align: center;
+  grid-area: 1/1/2/2;
+}
+.haut .logo {
+  grid-area: 1/1/2/2;
+  width: 150px;
+  height: auto;
+}
+.haut .titre {
+  grid-area: 1/2/2/3;
+}
+.haut .titre h1 {
+  font-size: 50px;
+  color: #2b262d;
+}
+.haut .titre p {
+  font-size: 30px;
+  color: #9f496e;
+}
+.haut .vide {
+  grid-area: 1/3/2/4;
+}
+
+.header-image .cover {
+  width: 100%;
+  background-size: contain;
+}
+
+nav {
+  padding-top: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul a {
+  text-decoration: none;
+  color: #9f496e;
+}
+nav ul li {
+  list-style: none;
+}
+
+main {
+  margin: 0 150px;
+}
+@media screen and (max-width: 800px) {
+  main {
+    margin: 0;
+  }
+}
+
+.histoire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 40px;
+  grid-auto-flow: row;
+}
+.histoire h2 {
+  grid-area: 1/1/2/3;
+  font-size: 40px;
+  color: #9f496e;
+  text-align: center;
+}
+.histoire .texte {
+  grid-area: 2/1/3/2;
+}
+.histoire .vitrine {
+  grid-area: 2/2/3/3;
+  width: 80%;
+  background-size: cover;
+  transform: translateX(12%);
+}
+
+h2 {
+  font-size: 40px;
+  color: #9f496e;
+  text-align: center;
+}
+
+.produit-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+}
+.produit-container .produit1 {
+  grid-area: 1/1/4/3;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.produit-container .produit2 {
+  grid-area: 1/3/2/5;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.produit-container .produit3 {
+  grid-area: 2/3/4/4;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.produit-container .produit4 {
+  grid-area: 2/4/4/5;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.produit-container .produit5 {
+  grid-area: 3/1/5/3;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.produit-container .produit6 {
+  grid-area: 3/3/5/5;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.suivre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.suivre .logo {
+  width: 80px;
+  height: auto;
+}
+
 body {
   font-family: "Dancing Script", cursive;
   background-color: #f2ebe5;
+  margin: 0 auto;
+  font-size: 25px;
 }
 
-img {
-  width: 200px;
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
