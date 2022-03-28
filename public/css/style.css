@@ -154,6 +154,23 @@ h2 {
   padding: 0 30px 20px 15px;
 }
 
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+
+#scroll_to_top img {
+  width: 25px;
+}
+
+a {
+  color: #9f496e;
+  text-decoration: none;
+}
+
 body {
   font-family: "Dancing Script", cursive;
   background-color: #f2ebe5;
