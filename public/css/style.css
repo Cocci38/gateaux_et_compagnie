@@ -8,10 +8,24 @@
   text-align: center;
   grid-area: 1/1/2/2;
 }
+@media screen and (max-width: 800px) {
+  .haut {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+}
 .haut .logo {
   grid-area: 1/1/2/2;
   width: 150px;
   height: auto;
+}
+@media screen and (max-width: 800px) {
+  .haut .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .haut .titre {
   grid-area: 1/2/2/3;

@@ -8,11 +8,21 @@
     justify-items: center;
     text-align: center;
     grid-area: 1 / 1 / 2 / 2;
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px
+    }
 
     .logo{
         grid-area: 1 / 1 / 2 / 2;
         width: 150px;
         height: auto;
+        @media screen and (max-width: 800px) {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     .titre {
         grid-area: 1 / 2 / 2 / 3;
