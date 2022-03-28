@@ -1,10 +1,16 @@
 .adresse-container {
-    @include flex-center;
+    @include flex-evenly;
     gap: 30px;
     margin-top: 20px;
     background-color: $color-dark;
     color: $color-light;
-    padding: 0 30px 20px 15px;
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
 }
 #scroll_to_top {
     position: fixed;

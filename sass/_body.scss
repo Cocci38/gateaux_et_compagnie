@@ -7,12 +7,18 @@ main {
         margin: 0;
     }
 }
-.histoire { 
+.histoire-container { 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 40px;
     grid-auto-flow: row;
+    @media screen and (max-width: 1100px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     h2 {
         grid-area: 1 / 1 / 2 / 3;
         font-size: 40px;
@@ -26,8 +32,12 @@ main {
     .vitrine {
         grid-area: 2 / 2 / 3 / 3;
         width: 80%;
-        background-size: cover;
-        transform: translateX(12%);
+        background-size: contain;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+            margin: 0;
+        }
     }
 }
 h2 {
@@ -42,6 +52,13 @@ h2 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
+    @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .produit1 {
         grid-area: 1 / 1 / 4 / 3;
         width: 100%;
