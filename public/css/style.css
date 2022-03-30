@@ -85,6 +85,7 @@ main {
 @media (max-width: 700px) {
   .histoire-container .texte {
     z-index: 0;
+    padding: 20px;
   }
 }
 .histoire-container .vitrine {
@@ -189,6 +190,7 @@ h2 {
     flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 20px;
   }
 }
 
