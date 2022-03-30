@@ -86,6 +86,7 @@ main {
   .histoire-container .texte {
     z-index: 0;
     padding: 20px;
+    font-size: 20px;
   }
 }
 .histoire-container .vitrine {
@@ -191,6 +192,7 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
+    font-size: 22px;
   }
 }
 
