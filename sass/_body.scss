@@ -18,15 +18,20 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: 0;
     }
     h2 {
         grid-area: 1 / 1 / 2 / 3;
         font-size: 40px;
         color: $color-middle;
         text-align: center;
+        margin-top: 40px;
     }
     .texte {
         grid-area: 2 / 1 / 3 / 2;
+        @media (max-width: 700px) {
+            z-index: 0;
+            }
     }
     
     .vitrine {
@@ -44,7 +49,6 @@ h2 {
     font-size: 40px;
     color: $color-middle;
     text-align: center;
-    margin-top: 70px;
 }
 .produit-container {
     display: grid;
@@ -58,9 +62,11 @@ h2 {
         align-items: center;
         flex-direction: column;
     }
-
+    .titre-produit {
+        margin-top: 40px;
+    }
     .produit1 {
-        grid-area: 1 / 1 / 4 / 3;
+        grid-area: 1 / 1 / 3 / 3;
         width: 100%;
         background-size: cover;
         overflow: hidden;
@@ -72,13 +78,13 @@ h2 {
         overflow: hidden;
     }
     .produit3 {
-        grid-area: 2 / 3 / 4 / 4;
+        grid-area: 2 / 3 / 3 / 4;
         width: 100%;
         background-size: cover;
         overflow: hidden;
     }
     .produit4 {
-        grid-area: 2 / 4 / 4 / 5;
+        grid-area: 2 / 4 / 3 / 5;
         width: 100%;
         background-size: cover;
         overflow: hidden;
@@ -99,6 +105,9 @@ h2 {
 .suivre {
     @include flex-center;
     gap: 70px;
+    .titre-suivre {
+        margin-top: 20px;
+    }
     .logo{
         width: 50px;
         height: auto;

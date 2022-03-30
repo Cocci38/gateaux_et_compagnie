@@ -46,18 +46,18 @@
     }
 }
 
-nav {
-    padding-top: 10px;
-    ul {
-        @include flex-evenly;
-        a{
-            text-decoration: none;
-            color: $color-middle;
-        }
-        li {
-            list-style: none;
+// nav {
+//     padding-top: 10px;
+//     ul {
+//         @include flex-evenly;
+//         a{
+//             text-decoration: none;
+//             color: $color-middle;
+//         }
+//         li {
+//             list-style: none;
             
-        }
-    }
-}
+//         }
+//     }
+// }
 

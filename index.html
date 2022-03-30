@@ -22,17 +22,21 @@
         <div class="header-image">
             <img src="./media/rose.svg" class="cover" alt="header_site_gateau_framboise" srcset="">
         </div>
-        <nav>
-            <ul>
-                <a href="#"><li>Accueil</li></a>
-                <a href="#histoire"><li>Notre histoire</li></a>
-                <a href="#produit"><li>Nos produits</li></a>
-                <a href="#suivre"><li>Nous contacter</li></a>
+        <nav class="top-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <a href="#" class="menu-a"><li>Accueil</li></a>
+                <a href="#histoire" class="menu-a"><li>Notre histoire</li></a>
+                <a href="#produit" class="menu-a"><li>Nos produits</li></a>
+                <a href="#suivre" class="menu-a"><li>Nous contacter</li></a>
             </ul>
         </nav>
     <main>
         <section id="histoire">
-            <h2>Notre histoire</h2>
+            <h2 class="titre-histoire">Notre histoire</h2>
             <div class="histoire-container">
             <div class="texte">
                 <p>Fondée en 1981, Gâteaux et compagnie est l'adresse idéale pour vos anniversaires, baptêmes ou mariages.</p>
@@ -44,7 +48,7 @@
         </section> 
 
         <section id="produit">
-            <h2>Nos produits</h2>
+            <h2 class="titre-produit">Nos produits</h2>
             <div class="produit-container">
                 <img src="./media/choco-framboise.jpg"  class="produit1" alt="gateau_choco_framboise" srcset="">
                 <img src="./media/macaron.jpg" class="produit2" alt="macaron" srcset="">
@@ -56,7 +60,7 @@
         </section>
 
         <section id="suivre">
-            <h2>Nous suivre</h2>
+            <h2 class="titre-suivre">Nous suivre</h2>
             <div class="suivre">
                 <img src="./media/logo/twitter.png" class="logo" alt="logo_twitter" srcset="">
                 <img src="./media/logo/instagram.png" class="logo" alt="logo_instagram" srcset="">
@@ -85,7 +89,7 @@
         </div>
     </footer>
     <div id="scroll_to_top">
-        <a href="#top"><img src="./media/logo/angles-up-solid.svg" alt="Retourner en haut" />Up</a>
+        <a href="#top" class="top"><img src="./media/logo/angles-up-solid.svg" alt="Retourner en haut" />Up</a>
     </div>
 </body>
 </html>
