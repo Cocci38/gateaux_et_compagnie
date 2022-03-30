@@ -16,12 +16,13 @@
 
     .logo{
         grid-area: 1 / 1 / 2 / 2;
-        width: 150px;
+        width: 200px;
         height: auto;
         @media screen and (max-width: 800px) {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            width: 150px;
         }
     }
     .titre {
