@@ -1,9 +1,10 @@
 .adresse-container {
-    @include flex-evenly;
+    @include flex-center;
     gap: 30px;
     margin-top: 20px;
     background-color: $color-dark;
     color: $color-light;
+    
     @media screen and (max-width: 800px) {
         display: flex;
         flex-direction: column;
